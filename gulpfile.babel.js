@@ -63,7 +63,7 @@ export const watch = () => {
     gulp.series(images, reload)
   );
   gulp.watch(paths.images.src, gulp.series(scripts, reload));
-  gulp.watch("./**/*.html", reload);
+  gulp.watch("./**/*.php", reload);
   gulp.watch(paths.other.src, reload);
 };
 
@@ -123,7 +123,7 @@ export const scripts = () => {
 export const serve = (done) => {
   server.init({
     proxy:
-      "C:/Users/Martino/Desktop/Programmazione/Templates/template-monster/index.html",
+      "C:/Users/Martino/Desktop/Programmazione/Templates/template-monster/index.php",
   });
   done();
 };
